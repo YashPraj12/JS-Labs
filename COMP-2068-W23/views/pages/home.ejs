@@ -1,9 +1,81 @@
 <%- include("../shared/_header"); %>
 
-    <div class="container mt-5">
-        <h1>Content Management System</h1>
+<!-- Feather Icons CDN link -->
+<link href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" rel="stylesheet">
 
-        <hr class="my-5">
+<style>
+    /* Custom styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f5f9; /* Light blue shade */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    hr {
+        border-color: #ddd;
+    }
+
+    .feather-icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    /* Colorful boxes */
+    .colorful-box {
+        background-color: #f9d5e5; /* Light pink */
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .colorful-box h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .colorful-box p {
+        color: #666;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1><i class="feather-icon" data-feather="edit"></i>Content Management System</h1>
+
+    <hr class="my-5">
+
+    <!-- Colorful boxes -->
+    <div class="colorful-box">
+        <h2>Welcome to our CMS!</h2>
+        <p>This is a powerful tool to manage your content easily.</p>
     </div>
+
+    <div class="colorful-box">
+        <h2>Features</h2>
+        <ul>
+            <li>Easy content creation and editing</li>
+            <li>Role-based access control</li>
+            <li>SEO optimization tools</li>
+        </ul>
+    </div>
+
+    
+</div>
+
+
 
 <%- include("../shared/_footer"); %>
